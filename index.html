@@ -1,1 +1,31 @@
-<h1>Helo World</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // Array of URLs to redirect to
+        var urls = [
+            "https://www.google.com",
+            "https://www.youtube.com",
+            "https://www.facebook.com",
+            "https://www.twitter.com",
+            "https://www.instagram.com",
+            "https://www.linkedin.com",
+            "https://www.reddit.com"
+        ];
+
+        // Get a random index from the urls array
+        var randomIndex = Math.floor(Math.random() * urls.length);
+
+        // Redirect to the random URL
+        window.location.href = urls[randomIndex];
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a id="redirect-link" href="#">click here</a>.</p>
+    <script type="text/javascript">
+        // Set the href of the fallback link
+        document.getElementById("redirect-link").href = urls[randomIndex];
+    </script>
+</body>
+</html>
