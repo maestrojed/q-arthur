@@ -14,7 +14,8 @@
             "https://maestrojed.github.io/q-arthur/imgs/compliment.png",
             "https://maestrojed.github.io/q-arthur/imgs/creep.png",
             "https://maestrojed.github.io/q-arthur/imgs/email-sub.png",
-            "https://maestrojed.github.io/q-arthur/imgs/lotto.png"
+            "https://maestrojed.github.io/q-arthur/imgs/lotto.png",
+            "https://maestrojed.github.io/q-arthur/imgs/audio.m4a"
         ];
 
         // Get URL parameters
@@ -23,20 +24,12 @@
 
         if (opt) {
             var index = parseInt(opt, 10) - 1;
-            console.log("Index is:" + index);
             if (index == 8) {
-                console.log("Index is Edie");
                 redirectUrl = "https://maestrojed.github.io/q-arthur/imgs/edie.mp4";
             }
             else if (index >= 0 && index < urls.length) {
-                console.log("Index is NOT Edie");
                 redirectUrl = urls[index];
             }
-            else {
-                console.log("Index is nothing");
-                console.log("Index is:" + index);
-            }
-            console.log("Index is  done.");
         }
 
         if (!redirectUrl) {
