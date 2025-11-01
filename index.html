@@ -23,11 +23,14 @@
 
         if (opt) {
             var index = parseInt(opt, 10) - 1;
-            if (index = 9 && index < urls.length) {
+            if (index == 9 && index < urls.length) {
                 redirectUrl = "https://maestrojed.github.io/q-arthur/imgs/edie.mp4";
             }
             else if (index >= 0 && index < urls.length) {
                 redirectUrl = urls[index];
+            }
+            else {
+                console.log("Index is:" + index);
             }
         }
 
