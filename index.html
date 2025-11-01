@@ -29,11 +29,14 @@
                 redirectUrl = "https://maestrojed.github.io/q-arthur/imgs/edie.mp4";
             }
             else if (index >= 0 && index < urls.length) {
+                console.log("Index is NOT Edie");
                 redirectUrl = urls[index];
             }
             else {
+                console.log("Index is nothing");
                 console.log("Index is:" + index);
             }
+            console.log("Index is  done.");
         }
 
         if (!redirectUrl) {
